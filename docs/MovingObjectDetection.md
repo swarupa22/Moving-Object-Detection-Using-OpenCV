@@ -1,12 +1,15 @@
 **MOVING OBJECT DETECTION USING OPENCV**
 
+
 **ABSTRACT:**
+
 
 Moving object detection is a fundamental task in computer vision
 applications, enabling various real-world applications such as
 surveillance, video analytics, and autonomous vehicles. It aims to
 develop a moving object detection system using OpenCV, an open-source
 computer vision library.
+
 
 Moving object detection is the technique of detecting of occurrence of
 any movement in front of the camera when a person makes any movement. It
@@ -15,21 +18,28 @@ bounding box will be rendered to the movement detected as if any new
 object will introduce in the frame. Then a Box will appear surrounding
 the object.
 
+
 Using a tracker it will count the movements of an object/person. For
 moving object detection, we calculate the difference between two
 continuous frames and if it's higher than the set threshold, it means
 movement has been observed there.
 
+
 **Libraries used :** cv2 , imutils , time
 
+
 **OBJECTIVE:**
+
 
 The main objective of object detection is to recognize and locate all
 moving objects within the frame.
 
+
 **CONTENTS :**
 
+
 **Object Detection :**
+
 
 Object Detection is the process of finding and recognizing real-world
 object instances such as car, bike, TV, flowers, and humans out of an
@@ -37,9 +47,11 @@ images or videos. An object detection technique lets you understand the
 details of an image or a video as it allows for the recognition,
 localization, and detection of multiple objects within an image.
 
+
 It goes beyond simple classification by not only determining the
 presence of objects but also precisely locating their bounding boxes in
 the visual input.
+
 
 Object detection algorithms employ various techniques such as deep
 learning, feature extraction, and machine learning to analyze the input
@@ -47,7 +59,9 @@ data and recognize different object categories. The output of object
 detection typically includes the class labels of the detected objects
 along with their corresponding bounding box .
 
+
 **Image:**
+
 
 An image is a visual representation of an object, scene, or concept. It
 consists of a two-dimensional array of pixels that captures visual
@@ -55,17 +69,23 @@ information. Each pixel in an image contains numerical values
 representing the color or intensity of the corresponding point in the
 image.Images can be
 
+
 -   **Grayscale**, consisting of shades of gray
+
 
 -   **Coloured**, where each pixel is represented by a combination of
     red, green, and blue (RGB) values.
 
+
 **Resize Image :**
+
 
 Resizing an image refers to the process of changing its dimensions,
 either by reducing or enlarging its size.
 
+
 **Code:**
+
 
 **1)**import cv2
 
@@ -95,13 +115,21 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-**Original Image Resized
-Image**![](./image1.png){width="1.642298775153106in"
-height="1.4542869641294838in"}
-![](./image2.png){width="0.8438681102362204in"
-height="0.635505249343832in"}
+
+Original Image
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/f37a50e2-6d19-40af-9794-a755c989668b)
+
+
+Resized Image
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/2cea45a7-e7a8-41f1-9326-735a6ce15eea)
+
 
 **Explanation of Code (1) :**
+
 
 **cv2.imread(\"cat.jpg\")** - Loads the image from the specified file
 
@@ -126,16 +154,21 @@ The argument '0' indicates that it waits indefinitely.
 **cv2.destroyAllWindows()** - Closes all open windows after a key is
 pressed.
 
+
 **Apply Gaussian Blur to an image :**
 
+
 **Gaussian Blur:**
+
 
 Gaussian blur is a common image filtering technique used to reduce image
 noise and smooth out pixel irregularities. It is based on the
 mathematical concept of a Gaussian distribution, which is a bell-shaped
 curve.
 
+
 **Code:**
+
 
 2)import cv2
 
@@ -162,14 +195,21 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-**Original Image Blurred Image**
 
-![](./image3.png){width="2.375331364829396in"
-height="2.3232403762029747in"}
-![](./image4.png){width="2.354494750656168in"
-height="2.3649136045494314in"}
+Original Image
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/eb01d5b0-a13d-4ce8-be6e-30c173abca61)
+
+
+Blurred Image
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/5c99ff56-1bc5-4494-b986-333c7ba4651c)
+
 
 **Explanation of Code (2) :**
+
 
 **cv2.imread(\"cat.jpg\")** - Loads the image from the specified file
 
@@ -196,9 +236,12 @@ The argument '0' indicates that it waits indefinitely.
 **cv2.destroyAllWindows()** - Closes all open windows after a key is
 pressed.
 
+
 **Apply Thresholding to an image :**
 
+
 **Thresholding:**
+
 
 Thresholding is a technique used to separate regions of an image based
 on pixel intensity values. The basic idea behind thresholding is to
@@ -207,7 +250,9 @@ the threshold value are assigned one intensity value (foreground) and
 pixels below the threshold are assigned another intensity value
 (background).
 
+
 **Code:**
+
 
 3)import cv2
 
@@ -240,16 +285,26 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-**Original Image Gray Image Threshold Image**
+Original Image 
 
-![](./image5.png){width="1.6740201224846893in"
-height="1.8161515748031496in"}
-![](./image6.png){width="1.7830555555555556in"
-height="1.8255435258092738in"}
-![](./image7.png){width="1.4991393263342083in"
-height="1.920919728783902in"}
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/cfe02885-a2c6-4121-b5f0-f8fa8906ba87)
+
+
+Gray Image 
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/9d79ece8-41f2-4f33-a714-ee383697a8f5)
+
+
+Threshold Image**
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/353fb2d0-c682-4019-afde-9657446d1e56)
+
 
 **Explanation of Code (3) :**
+
 
 **cv2.imread(\"cat.jpg\")** - Loads the image from the specified file
 
@@ -278,13 +333,17 @@ The argument '0' indicates that it waits indefinitely.
 **cv2.destroyAllWindows()** - Closes all open windows after a key is
 pressed.
 
+
 **Drawing Rectangle to an image :**
+
 
 Drawing a rectangle on an image refers to the process of adding a
 rectangular shape onto an image to highlight a specific region or define
 a bounding box around an object of interest.
 
+
 **Code:**
+
 
 4)import cv2
 
@@ -314,10 +373,12 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-![](./image8.png){width="1.6992738407699037in"
-height="1.1642311898512685in"}
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/16f83b00-3a84-49c9-8bd1-b8b76066bda2)
+
 
 **Explanation of Code (4) :**
+
 
 **cv2.imread(\"cat.jpg\")** - Loads the image from the specified file
 
@@ -337,12 +398,16 @@ The argument '0' indicates that it waits indefinitely.
 **cv2.destroyAllWindows()** - Closes all open windows after a key is
 pressed.
 
+
 **Putting Text in image:**
+
 
 Putting text on an image refers to the process of adding textual
 content, such as labels, captions, or annotations, to an image.
 
+
 **Code:**
+
 
 5)import cv2
 
@@ -382,10 +447,12 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-![](./image9.png){width="2.0301312335958004in"
-height="2.0122451881014873in"}
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/44aea678-a38d-4e46-bc0f-5da3b7858a7d)
+
 
 **Explanation of Code (5) :**
+
 
 **cv2.imread(\"cat.jpg\")** - Loads the image from the specified file
 
@@ -409,13 +476,17 @@ The argument '0' indicates that it waits indefinitely.
 **cv2.destroyAllWindows()** - Closes all open windows after a key is
 pressed.
 
+
 **Load Frames from Video:**
+
 
 Videos are made of frames. A frame refers to a single still image or a
 complete picture that is displayed sequentially at a specific rate to
 create the illusion of motion.
 
+
 **Code:**
+
 
 6\) **#Define a function to resize**
 
@@ -453,24 +524,33 @@ vs.release()
 
 cv2.destroyAllWindows()
 
-![](./image10.png){width="2.6724179790026246in"
-height="1.5566229221347332in"}
-![](./image11.png){width="2.9340168416447945in"
-height="1.5867475940507436in"}
 
-![](./image12.png){width="2.7005905511811026in"
-height="1.7220942694663166in"}
-![](./image13.png){width="2.976161417322835in"
-height="1.7746642607174103in"}
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/af1de9b4-ec5c-4f97-ba9b-2da4ba364fde)
 
-![](./image13.png){width="2.7874037620297463in"
-height="1.7379680664916886in"}
-![](./image14.png){width="2.9470199037620297in"
-height="1.7146850393700788in"}
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/adde0c70-9cb9-4cce-83ed-f840cc0a6f90)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/f224cb5e-8a95-4093-9372-5f91e7591839)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/6f50e153-e29f-4ef6-b326-26c0b9c056d8)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/0aea301b-e427-484a-86d3-0d9e826e5ed0)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/ceed6bc1-4061-4605-84b2-312d9222d106)
+
 
 **WORKFLOW :**
 
+
+![Screenshot 2023-06-04 181625](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/c6f30818-c643-4344-b0af-b9223160f719)
+
+
 **CODE IMPLEMENTATION:**
+
 
 **1)**
 
@@ -484,7 +564,9 @@ import time
 
 import cv2
 
+
 **Explanation:**
+
 
 Import the **cv2_imshow** from **google.colab.patches** - Displaying
 images
@@ -495,6 +577,7 @@ images
 
 **cv2** - OpenCV library.
 
+
 **2)**
 
 \# Open the video file
@@ -503,11 +586,14 @@ vs = cv2.VideoCapture(\'video.mp4\')
 
 time.sleep(1)
 
+
 **Explanation:**
+
 
 **cv2.VideoCapture** - Open the video file \'video.mp4\'
 
 **time.sleep(1)** - Pause the program for 1 second
+
 
 **3)**
 
@@ -519,13 +605,16 @@ firstFrame = None
 
 area = 500
 
+
 **Explanation:**
+
 
 **count** - Counting objects
 
 **firstFrame** -- Storing the first frame
 
 **area** -- Setting minimum contour area
+
 
 **4)**
 
@@ -543,7 +632,9 @@ grayImg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 gaussianImg = cv2.GaussianBlur(grayImg, (21, 21), 0)
 
+
 **Explanation:**
+
 
 **vs.read()** - Reads frames from the video
 
@@ -552,6 +643,7 @@ gaussianImg = cv2.GaussianBlur(grayImg, (21, 21), 0)
 **cv2.cvtColor** -- Converting frame to GrayScale
 
 **cv2.GaussianBlur** -- Applying gaussian blur
+
 
 **5)**
 
@@ -563,13 +655,17 @@ firstFrame = gaussianImg
 
 continue
 
+
 **Explanation:**
+
 
 **firstFrame is None** - Sets firstFrame to the current frame
 
 **continue** -- Continues to the next iteration of the loop
 
+
 **6)**
+
 
 #Calculate difference,threshold,dilation
 
@@ -579,7 +675,9 @@ threshImg = cv2.threshold(imgDiff, 25, 255, cv2.THRESH_BINARY)\[1\]
 
 threshImg = cv2.dilate(threshImg, None, iterations=2)
 
+
 **Explanation:**
+
 
 **cv2.absdiff** - Calculate the absolute difference between firstFrame
 and the current frame
@@ -587,6 +685,7 @@ and the current frame
 **cv2.threshold** -- To create a binary image
 
 **cv2.dilate** -- Enhance Object Boundaries
+
 
 **7)**
 
@@ -598,11 +697,14 @@ cv2.CHAIN_APPROX_SIMPLE)
 
 cnts = imutils.grab_contours(cnts)
 
+
 **Explanation:**
+
 
 **cv2.findContours** - Find contours in thresholded image
 
 **imutils.grab_contours** -- Contours are extracted.
+
 
 **8)**
 
@@ -622,9 +724,12 @@ count += 1
 
 text = \"Moving Object detected\"
 
+
 **Explanation:**
 
+
 **cv2.rectangle** - Draws a rectangle around the contour
+
 
 **9)**
 
@@ -642,7 +747,9 @@ if key == ord(\"q\"):
 
 break
 
+
 **Explanation:**
+
 
 **cv2.putText** -- Add text to image
 
@@ -658,11 +765,13 @@ break
 
 **pressed key is \'q\'**- Loop is broken, and the program exits.
 
+
 **10)**
 
 vs.release()
 
 cv2.destroyAllWindows()
+
 
 **Explanation:**
 
@@ -672,29 +781,32 @@ cv2.destroyAllWindows()
 
 **RESULTS :**
 
-![](./image15.png){width="4.298955599300087in"
-height="2.1096948818897636in"}
 
-![](./image16.png){width="4.321722440944882in"
-height="2.4631747594050744in"}
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/3b5c0723-2b4e-43fe-a045-15696d2a70a5)
 
-![](./image17.png){width="4.377781058617673in"
-height="1.9532556867891513in"}
 
-![](./image18.png){width="4.375580708661417in"
-height="2.1486636045494314in"}
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/3d8fb8d5-c2b6-407b-ae0a-94ddf8272eaa)
 
-![](./image19.png){width="4.50326990376203in"
-height="2.1620166229221347in"}
 
-![](./image20.png){width="4.49386811023622in"
-height="2.2155129046369204in"}
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/c70b152a-a9fa-4e7b-8abd-62201ae5d99c)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/a7ee4416-1d63-4e4e-850f-205905bfed83)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/e6d15c70-bdad-49d0-94bb-c4191c063b3e)
+
+
+![image](https://github.com/swarupa22/Moving-Object-Detection-Using-OpenCV/assets/134698070/0077990b-d847-4571-afdf-115db010599e)
+
 
 **CONCLUSION:**
+
 
 Finally,we implemented moving object detection using OpenCV. We utilized
 video processing techniques to detect and track moving objects in a
 video stream.
+
 
 This project demonstrated how OpenCV can be used for real-time moving
 object detection in video streams. It can be applied in various
